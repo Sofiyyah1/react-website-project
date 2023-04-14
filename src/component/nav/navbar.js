@@ -27,7 +27,7 @@ const Nav = () => {
     <div className={color ? "nav-header nav-header-bg" : "nav-header"}>
       <nav className="navbar">
         <div className="logo">
-          <NavLink to="/">
+          <NavLink to="/react-website-project/">
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
