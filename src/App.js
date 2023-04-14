@@ -13,7 +13,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/react-website-project/" element={<Home />}></Route>
         <Route path="who-we-are" element={<Who_We_Are />}></Route>
         <Route path="our-clients" element={<Our_clients />}></Route>
         <Route path="carrers" element={<Carrers />}></Route>
