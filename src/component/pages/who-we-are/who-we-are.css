@@ -1,0 +1,177 @@
+.who-we-are {
+  background-color: rgb(19, 19, 19);
+  /* font-size: 1.2rem; */
+  padding: 150px 8%;
+  width: 100%;
+}
+.who-we-are h1 {
+  text-align: center;
+  color: #f1aa30;
+  margin: 40px 0 50px 0;
+  font-size: 2.2rem;
+}
+
+.who-we-are p {
+  color: #f7f9f7;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.who-we-are__team {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+}
+.image {
+  height: 500px;
+  object-fit: contain;
+}
+
+.our-mission {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(143, 142, 142, 0.3),
+      rgb(15, 14, 14)
+    ),
+    url(../../../assets/our-mission.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 130px 8%;
+  line-height: 1.6;
+  column-gap: 10px;
+  color: #fff;
+}
+
+.collections h2 {
+  line-height: 1.5;
+  font-size: 2.3rem;
+  width: 70%;
+}
+.collection h1 {
+  font-size: 2.3rem;
+  color: #f1aa30;
+}
+.collection p {
+  width: 70%;
+  font-size: 1.22rem;
+}
+
+.collections-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  padding: 40px 0;
+}
+.our-mission__paragraph {
+  margin-top: 30px;
+}
+.our-mission__paragraph p {
+  line-height: 2;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+/* Work with the best */
+
+.work-with-best {
+  color: #fff;
+  text-align: center;
+  background-color: #111;
+  line-height: 2;
+  padding: 80px 0;
+}
+
+.work-with-best h1 {
+  font-size: 2rem;
+}
+.work-with__body {
+  display: flex;
+  justify-content: center;
+}
+.work-with-item {
+  margin: 60px;
+}
+.work-with__image img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.work-with-item p {
+  font-size: 1.2rem;
+  padding-top: 30px;
+  color: #f7f9f7;
+}
+.work-with__cards {
+  display: flex;
+  justify-content: center;
+}
+.work-with__cards .card {
+  padding: 40px;
+}
+
+@media (max-width: 968px) {
+  .who-we-are__team {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .who-we-are h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .who-we-are p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  .image {
+    order: 1;
+    width: 100%;
+    height: 350px;
+  }
+  .who-we-are__card {
+    order: 2;
+  }
+
+  .our-mission {
+    grid-template-columns: 1fr;
+    padding: 70px 8%;
+  }
+  .collections h2 {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .collections-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .collection p {
+    width: 100%;
+    font-size: 1.22rem;
+  }
+
+  .our-mission__paragraph {
+    margin-top: 0;
+  }
+  .our-mission__paragraph p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .work-with-best h1 {
+    font-size: 1.6rem;
+    padding: 0 20px;
+  }
+  .work-with__body {
+    flex-direction: column;
+  }
+  .work-with-item {
+    margin: 20px;
+  }
+}

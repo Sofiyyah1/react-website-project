@@ -1,0 +1,85 @@
+.our-client {
+  background-color: rgb(19, 19, 19);
+  padding: 150px 8%;
+}
+
+.our-client h1 {
+  text-align: center;
+  color: #f1aa30;
+  margin: 40px 0 30px 0;
+  font-size: 2.2rem;
+}
+
+.our-client .paragraph {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.column {
+  margin: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem 1.8rem;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgb(59, 58, 58) !important;
+}
+.button {
+  background-color: #f6a210;
+  border: none;
+  align-self: flex-start;
+  margin-top: auto;
+}
+.button:hover {
+  background-color: #efb042;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem !important;
+}
+
+.overflow {
+  overflow: hidden;
+}
+.card-img-top {
+  border-radius: 50%;
+  padding: 15px 15px 0 15px;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.04);
+}
+@media screen and (max-width: 940px) {
+  .our-client__heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .our-client .paragraph {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .column {
+    gap: 1.5rem;
+    margin: 20px;
+  }
+  .card-body {
+    font-size: 0.9rem;
+    padding: 1.1rem !important;
+  }
+  .our-client {
+    padding: 60px 8%;
+  }
+  .card-img-top {
+    display: none;
+  }
+}
